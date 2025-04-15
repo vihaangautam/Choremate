@@ -7,13 +7,13 @@ plugins {
 
 // Creates a variable called keystorePropertiesFile, and initializes it to the
 // keystore.properties file.
-def keystorePropertiesFile = rootProject.file("keystore.properties")
+//def keystorePropertiesFile = rootProject.file("keystore.properties")
 
 // Initializes a new Properties() object called keystoreProperties.
-def keystoreProperties = new Properties()
+//def keystoreProperties = new Properties()
 
 // Loads the keystore.properties file into the keystoreProperties object.
-keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+//keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
 android {
     compileSdkVersion 33
@@ -42,14 +42,14 @@ android {
         }
     } */
 
-    signingConfigs {
+    /*signingConfigs {
         release {
             storeFile file(keystoreProperties['storeFile'])
             storePassword keystoreProperties['storePassword']
             keyAlias keystoreProperties['keyAlias']
             keyPassword keystoreProperties['keyPassword']
         }
-    }
+    }*/
 
     dataBinding {
         enabled = true
@@ -66,7 +66,7 @@ android {
             minifyEnabled true
             debuggable false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.release
+            //signingConfig signingConfigs.release
             resValue 'string', 'app_name', '"Papa Points"'
         }
     }
