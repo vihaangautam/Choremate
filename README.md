@@ -25,3 +25,12 @@ These instructions will help you set up and run the project on your local Androi
 ### Installation
 
 1. Clone this repository to your local machine:
+   git clone https://github.com/vihaangautam/Choremate.git
+2. Open the project in Android Studio:
+- Select `File > Open` and choose the cloned directory.
+
+3. Let Gradle sync and download all required dependencies.
+
+4. Run the project on an emulator or a connected Android device.
+
+
